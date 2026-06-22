@@ -10,7 +10,7 @@ def register_user(username):
 class TestUser(unittest.TestCase):
 
     def test_register_user(self):
-        result = register_user("John")
+        result = register_user("john")
         self.assertIn(result, get_allowed_users())
 
     def test_allowed_users(self):
